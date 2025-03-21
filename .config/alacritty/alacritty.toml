@@ -3,3 +3,34 @@ import = ["~/.config/alacritty/themes/ayu_dark.toml"]
 
 [window]
 padding = {x = 15, y = 15}
+decorations = "None"
+
+[terminal.shell]
+program = "/usr/bin/zsh"
+args = ["-c", "tmux attach || tmux new"]
+
+[keyboard]
+bindings = [
+	# Short way of Ctrl + b (Just in case. Maybe change it later)
+	{ key = "ContextMenu", chars = "\u0002"},
+
+	# Function keys
+	# -------------------------------------------------------------------------
+	{ key = "F1", chars = "$HOME"},
+	{ key = "F2", chars = "$HOME"},
+
+
+	# tmux
+	#-------------------------------------------------------------------------
+
+	# Split panel vertically
+	{ key = "F9", chars = "\u0002%"},
+	# Split panel horizontally
+	{ key = "F10", chars = "\u0002\""},
+	# Close panel (tmux)
+	{ key = "F12", chars = "\u0002x"}
+	#arrows move panels
+	#{ key = "ArrowUp", mods ="Control", chars = "\u0002\u2191"}
+	#ctrl + del borra linea
+
+]

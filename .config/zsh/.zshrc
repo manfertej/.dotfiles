@@ -9,7 +9,7 @@ export ZSH=$ZDOTDIR/.oh-my-zsh
 export ZSH_COMPDUMP=$ZDOTDIR/.zcompdump
 export HISTSIZE=1000
 export HISTFILE=$ZDOTDIR/.zsh_history
-
+export ZSH_CUSTOM=$ZDOTDIR
 ZSH_THEME="avit"
 
 
@@ -30,7 +30,7 @@ source $ZSH/oh-my-zsh.sh
 # -----------------------------------------------------------------------
 # export MANPATH="/usr/local/man:$MANPATH"
 
-export LANG=en_US.UTF-8
+export LANG=es_ES.UTF-8
 
 # Preferred editor
 export EDITOR=nvim
