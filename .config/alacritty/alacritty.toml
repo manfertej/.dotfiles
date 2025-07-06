@@ -11,7 +11,7 @@ args = ["-c", "tmux attach || tmux new"]
 
 [keyboard]
 bindings = [
-	# Short way of Ctrl + b (Just in case. Maybe change it later)
+	# Ctrl + b shortcut as rightclick from keyboard.
 	{ key = "ContextMenu", chars = "\u0002"},
 
 	# Function keys
